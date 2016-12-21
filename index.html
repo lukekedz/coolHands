@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ngQuickStart Heroes</title>
+    <title>Cool Hands</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -23,6 +23,24 @@
 
   <body>
     <app>Loading...</app>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-messaging.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAlgqhHn7beG48Ylkiuoqr1NRT78IDalRg",
+        authDomain: "coolhands-16e35.firebaseapp.com",
+        databaseURL: "https://coolhands-16e35.firebaseio.com",
+        storageBucket: "coolhands-16e35.appspot.com",
+        messagingSenderId: "78112943727"
+      };
+      firebase.initializeApp(config);
+    </script>
 
   </body>
 </html>

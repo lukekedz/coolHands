@@ -1,32 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Hero }        from './hero';
-import { HeroService } from './hero.service';
+import { Day }        from './day';
+import { DayService } from './day.service';
 
 @Component({
   moduleId:    module.id,
   selector:    'app',
   templateUrl: 'app.component.html',
   styleUrls:   ['app.component.css'],
-  providers:   [HeroService]
+  providers:   [DayService]
 })
 export class AppComponent implements OnInit {
-	title = 'Heroes';
-	heroes: Hero[];
-	selectedHero: Hero;
+	title = 'Cool Hands';
+	days: Day[];
 
-	constructor(private heroService: HeroService) {}
+	constructor(private dayService: DayService) { }
 
-	getHeroes(): void {
-	  this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+	getDays(): void {
+		// this.dayService.getDays().then(days => this.days = days);
 	}
 	
 	ngOnInit(): void {
-		this.getHeroes();
+		// this.getDays();
   	}
-
-	onSelect(hero: Hero): void {
-	 	this.selectedHero = hero;
-	}
 
 }
