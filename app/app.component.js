@@ -15,9 +15,9 @@ var AppComponent = (function () {
         this.dayService = dayService;
         this.title = 'Cool Hands';
     }
-    AppComponent.prototype.getDays = function () {
-        // this.dayService.getDays().then(days => this.days = days);
-    };
+    // getDays(): void {
+    // 	this.dayService.getDays().then(days => this.days = days);
+    // }
     AppComponent.prototype.ngOnInit = function () {
         // this.getDays();
     };
